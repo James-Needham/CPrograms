@@ -36,8 +36,8 @@ int main(void)
         r_one = (2*c) / ((-b) - sqrt(pow(b,2) - (4*a*c)));
         r_two = (-b - sqrt(discriminant)) / (2 * a);
         printf("The value of the first root is %.10lf.\n" , r_one);
-        equation_value_one = (a * r_one * r_one) + (b * r_one) + c;
-        equation_value_two = c + (b * r_two) + (a * r_two * r_two) ;
+        equation_value_one = ((a * r_one * r_one) + (b * r_one) + c) * -1;
+        equation_value_two = (c + (b * r_two) + (a * r_two * r_two)) * -1 ;
 
         printf("The value of the quadratic equation evaluated at %.10lf is %.6lf.\n" , r_one , equation_value_one);
         printf("The value of the second root is %.10lf.\n" , r_two);
