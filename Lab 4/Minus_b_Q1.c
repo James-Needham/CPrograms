@@ -9,7 +9,7 @@ int main(void)
 
     double r1, r2;
 
-    double root;
+    double discriminant;
 
     /* Getting user input for the equation's variables.*/
 
@@ -23,10 +23,10 @@ int main(void)
     scanf("%lf" , &c);
 
     /* Seeing if the roots are real or imaginary*/
-    root = (pow(b,2) - (4*a*c));
+    discriminant = (pow(b,2) - (4*a*c));
 
     /* State if the roots are real and calculate the values of the roots*/
-    if (root > 0)
+    if (discriminant > 0)
     {
         printf("The number of real roots is 2.\n");
         r1 = ((-b) + sqrt(pow(b,2) - (4*a*c)))/(2*a);
@@ -36,13 +36,13 @@ int main(void)
     }
 
     /* Notify the user if the roots are imaginery*/
-    else if (root < 0)
+    else if (discriminant < 0)
     {
         printf("The number of real roots is 0.\n");
     }
 
     /* State that there is only 1 root and calculate its value*/
-    else if (root == 0)
+    else if (discriminant == 0)
     {
         printf("The number of real roots is 1.\n");
         r1 = ((-b) + sqrt(pow(b,2) - (4*a*c)))/(2*a);
