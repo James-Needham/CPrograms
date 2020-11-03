@@ -1,17 +1,23 @@
 /* James Needham */
 /* 3 November 2020 */
 /*Sort Highest to Lowest Q2 (Lab 6)*/
+
+/* Adding the necessary C Libraries */
 #include <stdio.h>
 
 int main(void)
 {
     
     double w, x, y, z;
+    /* you may need some extra variables - but NO arrays please! */
     double temp;
 
-
+    /* Do not change the following input statement */
     scanf("%lf%lf%lf%lf",&w,&x,&y,&z);
 
+    /* Enter your solution here */
+
+    /* Using if statements to sort the values of the four values by temporarily storing one of those values in the variable temp. */
     if(w < z)
     {
         temp = w;
@@ -50,7 +56,8 @@ int main(void)
     }
 
 
-    
+    /* Do not change the following output statement */
+    /* Outputting the sorted values from highest to lowest */
     printf("%f %f %f %f\n",w, x, y, z);
 
     return 0;
