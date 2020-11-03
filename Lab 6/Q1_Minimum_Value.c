@@ -1,5 +1,6 @@
 /* James Needham */ 
 /* 2 November 2020*/
+/*Q1 Minimum Value*/
 
 
 #include <stdio.h>
