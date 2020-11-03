@@ -17,11 +17,12 @@ int main(){
     /* Asking the user what decimal numbers to convert to binary. */
     printf("Enter the decimal number:\n");    
     scanf("%d",&N);
+    /*Saving the value of Num to N because N will change through the loop and we need the original value of N to be printed out in the output*/
     Num = N;
 
     if(N > 0)
     {
-        /* Use a for loop to get the remainder of each division calculated from the users input down to 1 divided by 0.*/     
+    /* Use a for loop to get the remainder of each division calculated from the users input down to 1 divided by 0.*/     
     for(digit=0;N>0;digit++)    
     {    
         a[digit]=N%2;    
