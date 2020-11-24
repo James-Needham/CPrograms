@@ -16,7 +16,7 @@ int main(void)
   fgets(msg, MAX_MSG_SIZE, stdin);
  
   /* complete your answer here */
-  /*While i is less than MAX_MSG_SIZE and the character is not the null terminant convert i to uppercase*/
+  /*While i is less than MAX_MSG_SIZE and the character is not the null terminator convert i to uppercase*/
     while(i<MAX_MSG_SIZE && msg[i]!='\0')
     {
         /*If current character i is lowercase alphabet then convert it to uppercase.*/
