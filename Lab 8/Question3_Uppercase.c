@@ -7,7 +7,6 @@
 
 /*Define the max array size*/
 #define MAX_MSG_SIZE 256
-void capitalise(char str[]);
 int main(void)
 {
   char msg[MAX_MSG_SIZE+1];
